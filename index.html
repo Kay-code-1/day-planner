@@ -15,12 +15,12 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <title>Work Day Planner</title>
   </head>
   <body>
@@ -34,60 +34,179 @@
       <div class="container">
         <!--Timeblocks go here -->
 
-        <div class="row bg-warning">
-          <div class="col-md-2 align-self-center time-block" id="id-9" >9:00 AM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow9">
+          <div class="col-2 align-self-center time-block" id="time9">
+            9:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event9"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn9"
+              onclick="saveEvent('9')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
 
-        <div class="row bg-secondary">
-          <div class="col-md-2 align-self-center time-block" id="id-10">10:00 AM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
-        </div>
-        
-        <div class="row bg-warning">
-          <div class="col-md-2 align-self-center time-block" id="id-11">11:00 AM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
-        </div>
-
-        <div class="row bg-secondary">
-          <div class="col-md-2 align-self-center time-block" id="id-12">12:00 PM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
-        </div>
-
-        <div class="row bg-warning">
-          <div class="col-md-2 align-self-center time-block" id="id-13">1:00 PM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow10">
+          <div class="col-2 align-self-center time-block" id="time10">
+            10:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event10"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn10"
+              onclick="saveEvent('10')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
 
-        <div class="row bg-secondary">
-          <div class="col-md-2 align-self-center time-block" id="id-14">2:00 PM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow11">
+          <div class="col-2 align-self-center time-block" id="time11">
+            11:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event9"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn11"
+              onclick="saveEvent('11')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+       
+        <div class="row" id="eventRow12">
+          <div class="col-2 align-self-center time-block" id="time12">
+            12:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event12"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn12"
+              onclick="saveEvent('12')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
 
-        <div class="row bg-warning">
-          <div class="col-md-2 align-self-center time-block align-self-center" id="id-15">3:00 PM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow13">
+          <div class="col-2 align-self-center time-block" id="time13">
+            1:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event13"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn13"
+              onclick="saveEvent('13')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
 
-        <div class="row bg-secondary">
-          <div class="col-md-2 align-self-center time-block" id="id-16">4:00 PM</div>
-          <textarea class="col-md-9"></textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow14">
+          <div class="col-2 align-self-center time-block" id="time14">
+            2:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event14"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn14"
+              onclick="saveEvent('14')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
 
-        <div class="row bg-warning">
-          <div class="col-md-2 align-self-center time-block" id="id-17">5:00 PM</div>
-          <textarea class="col-md-9"> </textarea>
-          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        <div class="row" id="eventRow15">
+          <div class="col-2 align-self-center time-block" id="time15">
+            3:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event15"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn15"
+              onclick="saveEvent('15')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
         </div>
-   
+
+        <div class="row" id="eventRow16">
+          <div class="col-2 align-self-center time-block" id="time16">
+            4:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event16"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn16"
+              onclick="saveEvent('16')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+
+        <div class="row" id="eventRow17">
+          <div class="col-2 align-self-center time-block" id="time17">
+            5:00 PM
+          </div>
+          <div class="col-9">
+            <textarea id="event17"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn17"
+              onclick="saveEvent('17')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+
+
+
       </div>
     </main>
 
