@@ -4,46 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <title>Work Day Planner</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <table class="table table-border table-dark table-striped"">
-        <tr>
-          <th>Time Block</th>
-          <th>Event</th>
-          <th>Save</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <main>
+      <div class="container">
+        <!--Timeblocks go here -->
+
+        <div class="row bg-warning">
+          <div class="col-md-2 align-self-center time-block" id="id-9" >9:00 AM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-secondary">
+          <div class="col-md-2 align-self-center time-block" id="id-10">10:00 AM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+        
+        <div class="row bg-warning">
+          <div class="col-md-2 align-self-center time-block" id="id-11">11:00 AM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-secondary">
+          <div class="col-md-2 align-self-center time-block" id="id-12">12:00 PM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-warning">
+          <div class="col-md-2 align-self-center time-block" id="id-13">1:00 PM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-secondary">
+          <div class="col-md-2 align-self-center time-block" id="id-14">2:00 PM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-warning">
+          <div class="col-md-2 align-self-center time-block align-self-center" id="id-15">3:00 PM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-secondary">
+          <div class="col-md-2 align-self-center time-block" id="id-16">4:00 PM</div>
+          <textarea class="col-md-9"></textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+
+        <div class="row bg-warning">
+          <div class="col-md-2 align-self-center time-block" id="id-17">5:00 PM</div>
+          <textarea class="col-md-9"> </textarea>
+          <button type="button" class="col-md-1 btn btn-info saveBtn align-self-center">Save</button>
+        </div>
+   
+      </div>
+    </main>
+
+    <script src="./assets/JS/script.js"></script>
   </body>
 </html>
