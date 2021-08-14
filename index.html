@@ -27,12 +27,92 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <div class="container-date py-2 text-warning bg-dark">
+        <p id="currentDay" class="lead"></p>
+        <p id="currentTime" class="lead"></p>
+      </div>
+      
     </header>
 
     <main>
-      <div class="container">
+      <div class="container mb-3">
         <!--Timeblocks go here -->
+
+        <div class="row" id="eventRow5">
+          <div class="col-2 align-self-center time-block" id="time5">
+            5:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event5"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn5"
+              onclick="saveEvent('5')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+
+        <div class="row" id="eventRow6">
+          <div class="col-2 align-self-center time-block" id="time6">
+            6:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event6"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn6"
+              onclick="saveEvent('6')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+
+        <div class="row" id="eventRow7">
+          <div class="col-2 align-self-center time-block" id="time7">
+            7:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event7"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn7"
+              onclick="saveEvent('7')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+
+        <div class="row" id="eventRow8">
+          <div class="col-2 align-self-center time-block" id="time8">
+            8:00 AM
+          </div>
+          <div class="col-9">
+            <textarea id="event8"></textarea>
+          </div>
+          <div class="align-self-center">
+            <button
+              type="button"
+              class=" btn btn-info"
+              id="btn8"
+              onclick="saveEvent('8')"
+            >
+              <i class="fa fa-save"></i> Save
+            </button>
+          </div>
+        </div>
 
         <div class="row" id="eventRow9">
           <div class="col-2 align-self-center time-block" id="time9">
